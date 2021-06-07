@@ -31,7 +31,7 @@ public class App {
     }
 
     public String concatenateOutput(String quote, String author) {
-        return author + " says, " + "\"" + quote + "\"";
+        return String.format("%s says, \"%s\"", author, quote);
     }
 
     public void printOutput(String outputString) {
